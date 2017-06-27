@@ -1,0 +1,178 @@
+/*
+Theme Name: LearningWordPress
+Author: Jan-Jan Tandayag
+Author URI: github.com
+Version: 1.0
+*/
+body{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color:#333;
+}
+a:link, a:visited{
+	color:#006ec3;
+}
+
+p{
+	line-height: 1.65em;
+}
+/*  GENERAL LAYOUT */
+div.container{
+	padding:20px;
+	max-width: 920px;
+	margin: 0 auto;
+}
+article.posts{
+	border-bottom: 2px dotted #bbbbbb;
+}
+.posts:last-of-type{
+	border-bottom: none;
+}
+/* HEADER */
+.site-header{
+	border-bottom: 2px solid #999;
+}
+/* FOOTER */
+.site-footer{
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
+/*NAVIGATION MENU*/
+.site-nav ul{
+	margin:0;
+	padding:0;
+}
+.site-nav ul li {	
+	display: inline-block;
+	list-style: none;
+}
+/*NAVIGATION MENU - HEADER */
+.site-header .site-nav ul li {
+	margin-right:15px;
+}
+.site-header .site-nav ul li a{
+	padding:20px;
+	display: inline-block;
+	border:1px solid #bbb;
+	border-bottom: none;
+	text-decoration: none;
+}
+.site-header .site-nav ul li.current-menu-item{
+	background:#6678f6;
+	font-weight: bold;
+}
+.site-header .site-nav ul li.current-menu-item a{
+	color:#fff;
+}
+/*NAVIGATION MENU - FOOTER */
+.site-footer .site-nav ul li{
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: 1px dotted red;
+} 
+.site-footer .site-nav ul li a{
+	text-decoration: none;
+}
+.site-footer .site-nav ul li.current-menu-item{
+	font-weight: bold;
+}
+.site-footer .site-nav ul li.current-menu-item a{
+	color:red;
+}
+
+/*PAGE LAYOUT */
+article.page h2{
+	font-size: 300%;
+}
+
+/*TWO COLUMN TITLE LAYOUT*/
+.title-column{
+	width: 30%;
+	float:left;
+}
+.text-column{
+	width:70%;
+	float:right;
+}
+.clearfix:after{
+	display: block;
+	content: ' ';
+	clear:both;
+}
+
+/*INFO-BOX STYLE*/
+.info-box{
+	float:right;
+	width:30%;
+	border-radius: 10px;
+	background:#eee;
+	padding: 5px;
+}
+.children-links{
+	margin-top:20px;
+	margin-bottom: 20px;
+	font-size: 80%;
+}
+.current-page-ancestor a{
+	background:#6678f6;
+	font-weight: bold;
+	color: #fff;
+}
+.children-links a:link,.children-links a:visited{
+	text-decoration: none;
+}
+.children-links ul{
+	float:left;
+}
+.children-links li{
+	margin-right: 20px;
+}
+.children-links .parent-link{
+	float:left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+	font-size: 120%;
+	font-weight: bold;
+}
+.children-links .parent-link a:link,.children-links .parent-link a:visited{
+	color:#333;
+}
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited{
+	border-bottom: 1px solid #DDD;
+	color:#333;
+	cursor: default;
+}
+
+/*POST STYLES*/
+.posts h2{
+	margin-bottom: 0px !important;
+}
+.post-info{
+	margin-top:0;
+	font-size: 87%;
+	color:#999;
+}
+.post-info a:link, .post-info a:visited{
+	color:#999;
+	text-transform: uppercase;
+}
+
+/* IMAGES STYLES */
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.has-thumbnail{
+	position: relative;
+	padding-left:200px;
+	padding-bottom: 20px;
+}
+.post-thumbnail{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
